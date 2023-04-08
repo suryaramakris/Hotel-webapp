@@ -35,7 +35,7 @@ st.write("#")
 #locality selection and data loading
 col1,col2 = st.columns(2)
 data = col1.selectbox("Please choose your locality :",options=("HSR Layout",'Jayanagar','MG Road',"Residency Road"))
-df = pd.read_csv(r"C:\Users\Soorya\Documents\selenium-webscraping\hotels_webscraping\csv_files\\"+data+".csv")
+df = pd.read_csv(data+".csv")
 
 #unique cuisine based on the locality
 food = []
